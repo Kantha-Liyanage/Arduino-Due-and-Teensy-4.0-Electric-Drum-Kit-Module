@@ -16,7 +16,11 @@ Electric Drum Kit Module using Arduino Due and Teensy 4.0
 - Arduino Due X 1
 - Teensy 4.0 X 1
 - Teensy 4.0 Audio Adaptor Board X 1
+- Teensy Recommended micro SD Card X 1
 - 6.3mm mono sockets X 10
+- 1M Resister X 10
+- Push Button X 2
+- 10k Resister X 2
 - Jumper wires
 - 3.5mm stereo jack X 1 (optional)
 - 3.5mm stereo output socket X 1 (optional)
