@@ -1,4 +1,5 @@
-//Notes
+//Drum Pads Note numbers
+//These are the number values that are sent via Serial output to the Teensy board.
 byte SNARE        = 0;
 byte BASS         = 1;
 byte SNARE_TWO    = 2;
@@ -10,8 +11,10 @@ byte CYMBAL_TWO   = 7;
 byte CYMBAL_THREE = 8;
 byte PERCUSSION   = 9;
 
+//Two characters assinged to drum kits navation buttons
 char KIT_UP      = '+';
 char KIT_DOWN    = '-';
+char kitsUpDownFlag = 'X';
 
 //Note statues
 bool isSnarePlayed       = true;
@@ -50,24 +53,22 @@ float pinVoltageCymbalTwo   = 0;
 float pinVoltageCymbalThree = 0;
 float pinVoltagePercussion  = 0;
 
-//Parameters
+//Triggers handling Parameters
 const short TRIGGER_TIME_GAP = 20;
 const short TRIGGER_THRESHOLD_VOLTAGE = 100;
 const short TRIGGER_THRESHOLD_VOLTAGE_OFF = 30;
-
-char kitsUpDownFlag = 'X';
 
 void setup(){
   
   //MIDI settings
   Serial.begin(115200);
 
-  //Kits Up/Down buttons
+  //Drum Kits Up/Down buttons
   pinMode(2,INPUT);
   pinMode(3,INPUT);
   
   //Grounded pin
-  //To overcome arduino bleeding problems(electronic), ground an analog pin and read it between readings
+  //To overcome arduino bleeding problems(electronic), ground an analog pin and read it between drum pad pins readings
   pinMode(A10, INPUT);
     
   //Pad trigger pins
@@ -82,6 +83,7 @@ void setup(){
   pinMode(A8, INPUT); //Cymbal Three
   pinMode(A9, INPUT); //Percussion
 
+  //Initialize
   lastSnarePlayedTime       =
   lastHighTomPlayedTime     = 
   lastMidTomPlayedTime      =
@@ -97,7 +99,7 @@ void setup(){
 
 void loop(){  
   //Read trigger voltages
-  pinVoltageSnare = analogRead(A10);
+  pinVoltageSnare = analogRead(A10); //Grounded pin
   pinVoltageSnare = analogRead(A0);
   processTrigger(SNARE, pinVoltageSnare, isSnarePlayed, lastSnarePlayedTime);
 
