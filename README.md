@@ -22,6 +22,7 @@ Electric Drum Kit Module using Arduino Due and Teensy 4.0
 - Push Button X 2
 - 10k Resister X 2
 - Jumper wires
+- Project box X 1
 - 3.5mm stereo jack X 1 (optional)
 - 3.5mm stereo output socket X 1 (optional)
   DC jack (optional)
