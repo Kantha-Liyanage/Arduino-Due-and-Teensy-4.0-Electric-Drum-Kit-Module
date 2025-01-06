@@ -10,7 +10,18 @@ Electric Drum Kit Module using Arduino Due and Teensy 4.0
 - No latacy issues. The latancy is below the recognizable level. Less than 50ms from hitting to a drum pad and hearing the actual sound from the speakers.
 - Supports 10 drum triggers
 - Drum Kits can be added to the module using the SD card
-- Supports Wav 16 bits 44.1 kHzdrum samples
+- Supports 16bits 44.1kHz Wav drum samples
+
+## Components Used
+- Arduino Due X 1
+- Teensy 4.0 X 1
+- Teensy 4.0 Audio Adaptor Board X 1
+- 6.3mm mono sockets X 10
+- Jumper wires
+- 3.5mm stereo jack X 1 (optional)
+- 3.5mm stereo output socket X 1 (optional)
+  DC jack (optional)
+- DC socket (optional)
 
 ## Teensy 4.0 Programming
 - [Teensy Audio Library](https://www.pjrc.com/teensy/td_libs_Audio.html)
