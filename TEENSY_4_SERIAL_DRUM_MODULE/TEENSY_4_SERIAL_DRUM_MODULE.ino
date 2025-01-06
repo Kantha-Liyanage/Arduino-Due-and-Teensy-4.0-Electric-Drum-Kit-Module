@@ -8,7 +8,7 @@
 //Teensy Audio Objects
 AudioControlSGTL5000 sgtl5000_1;
 
-//Players
+//10 Audio Players
 AudioPlaySdWav           playSdWav1; 
 AudioPlaySdWav           playSdWav2;         
 AudioPlaySdWav           playSdWav3;     
@@ -20,6 +20,7 @@ AudioPlaySdWav           playSdWav8;
 AudioPlaySdWav           playSdWav9; 
 AudioPlaySdWav           playSdWav10; 
 
+//Mixers
 AudioMixer4              mixer1;
 AudioMixer4              mixer2;         
 AudioMixer4              mixer3;
@@ -76,7 +77,7 @@ AudioConnection          patchCord28_(mixerMaster, 0, i2s1, 1);
 //Kits count
 int KITS_COUNT = 0;
 int kit = 1;
-char tonePath[9]; //"01/X.wav" //9th one is for the array end null character
+char tonePath[9]; //Example: "01/X.wav" : has only 8 visible chars but 9th one is for the array end null character
 
 void setup() {
   HWSERIAL.begin(115200);
