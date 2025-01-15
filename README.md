@@ -46,7 +46,7 @@ MicroSD Card <br/>
    + 2.wav
    + .....
    + 9.wav
-- Kits.txt
+- kits.txt
 
 ## Teensy 4.0 Programming
 - [Teensy Audio Library](https://www.pjrc.com/teensy/td_libs_Audio.html)
