@@ -34,8 +34,10 @@ MicroSD Card <br/>
 <img src="https://raw.githubusercontent.com/Kantha-Liyanage/Arduino-Due-and-Teensy-4.0-Electric-Drum-Kit-Module/refs/heads/main/microSD%20card.jpg" alt="Description" width="300">
 
 ### SD Card Folder Structure
+The current code can handle 99 drum kits. You need to create a separate folders for each kit giving a two-digit folder name. Inside those folders we need to place the drum pad tones giving a single digit file name for each wav file. The current code support 0 to 9, that is 10 drum triggers. Number kits (in below example it is 2) need to be saved in the kits.txt file. Teensy code reads this text file to identify the number of kits count.
+
 - 01
-   + 0.wav
+   + 0.wav (Stereo 16bits 44.1kHz Wav)
    + 1.wav
    + 2.wav
    + .....
@@ -47,6 +49,10 @@ MicroSD Card <br/>
    + .....
    + 9.wav
 - kits.txt
+  
+## Wav Audio Conversion Tools
+- [Audacity](https://www.audacityteam.org/)
+- [Online Audioconverter](https://onlineaudioconverter.com/)
 
 ## Teensy 4.0 Programming
 - [Teensy Audio Library](https://www.pjrc.com/teensy/td_libs_Audio.html)
