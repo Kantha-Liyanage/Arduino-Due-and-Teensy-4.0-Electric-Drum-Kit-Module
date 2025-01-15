@@ -1,4 +1,4 @@
-# Arduino-Due-and-Teensy-4.0-Electric-Drum-Kit-Module
+# Arduino Due and Teensy 4.0 Electric Drum Kit Module
 Electric Drum Kit Module using Arduino Due and Teensy 4.0 
 
 ![e-drum](https://raw.githubusercontent.com/Kantha-Liyanage/Arduino-Due-and-Teensy-4.0-Electric-Drum-Kit-Module/refs/heads/main/Arduino-Teensy%20E-Drum.jpeg)
