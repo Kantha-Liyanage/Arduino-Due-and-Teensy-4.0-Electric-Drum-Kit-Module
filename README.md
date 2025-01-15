@@ -33,6 +33,21 @@ Electric Drum Kit Module using Arduino Due and Teensy 4.0
 MicroSD Card <br/>
 <img src="https://raw.githubusercontent.com/Kantha-Liyanage/Arduino-Due-and-Teensy-4.0-Electric-Drum-Kit-Module/refs/heads/main/microSD%20card.jpg" alt="Description" width="300">
 
+### SD Card Folder Structure
+- 01
+   + 0.wav
+   + 1.wav
+   + 2.wav
+   + .....
+   + 9.wav
+- 02
+   + 0.wav
+   + 1.wav
+   + 2.wav
+   + .....
+   + 9.wav
+- Kits.txt
+
 ## Teensy 4.0 Programming
 - [Teensy Audio Library](https://www.pjrc.com/teensy/td_libs_Audio.html)
 - [Teensy IDE](https://www.pjrc.com/teensy/gui/index.html)
