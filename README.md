@@ -30,6 +30,8 @@ Electric Drum Kit Module using Arduino Due and Teensy 4.0
   DC jack (optional)
 - DC socket (optional)
 
+![MicroSD Card](https://raw.githubusercontent.com/Kantha-Liyanage/Arduino-Due-and-Teensy-4.0-Electric-Drum-Kit-Module/refs/heads/main/microSD%20card.jpg)
+
 ## Teensy 4.0 Programming
 - [Teensy Audio Library](https://www.pjrc.com/teensy/td_libs_Audio.html)
 - [Teensy IDE](https://www.pjrc.com/teensy/gui/index.html)
